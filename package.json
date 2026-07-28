@@ -1,6 +1,7 @@
 {
   "name": "smb-money-stack",
   "version": "1.0.0",
+  "description": "A filing-based SaaS durability teardown of Intuit, BILL, and Toast.",
   "private": true,
   "scripts": {
     "dev": "next dev",
