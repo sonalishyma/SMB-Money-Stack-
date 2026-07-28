@@ -5,19 +5,14 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vinext dev",
-    "build": "vinext build && node scripts/prepare-sites.mjs",
-    "start": "vinext start"
+    "dev": "next dev",
+    "build": "next build && node scripts/prepare-sites.mjs",
+    "start": "node scripts/preview-sites.mjs"
   },
   "dependencies": {
     "next": "16.2.12",
     "react": "19.2.8",
     "react-dom": "19.2.8"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-rsc": "0.5.30",
-    "react-server-dom-webpack": "19.2.8",
-    "vinext": "1.0.0-beta.4"
   },
   "overrides": {
     "postcss": "8.5.23",
