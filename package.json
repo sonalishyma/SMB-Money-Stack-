@@ -5,19 +5,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "build:edge": "opennextjs-cloudflare build",
-    "preview:edge": "opennextjs-cloudflare preview"
+    "build": "next build && node scripts/prepare-dist.mjs",
+    "start": "node scripts/serve-dist.mjs"
   },
   "dependencies": {
     "next": "16.2.12",
     "react": "19.2.8",
     "react-dom": "19.2.8"
-  },
-  "devDependencies": {
-    "@opennextjs/cloudflare": "1.20.2",
-    "wrangler": "4.114.0"
   },
   "overrides": {
     "postcss": "8.5.23",
