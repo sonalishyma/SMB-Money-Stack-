@@ -7,6 +7,7 @@ node_modules/
 .DS_Store
 npm-debug.log*
 *.tsbuildinfo
+next-env.d.ts
 
 # Local research source; the published site contains the derived analysis only.
 smb-money-stack-collector.xlsx
