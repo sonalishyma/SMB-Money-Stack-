@@ -92,14 +92,4 @@ npm run build
 npm start
 ```
 
-## Publish with GitHub Pages
 
-The repository includes [a GitHub Pages workflow](.github/workflows/deploy-pages.yml). To enable it:
-
-1. Open the repository’s **Settings** tab.
-2. Select **Pages** under **Code and automation**.
-3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-4. Merge the Pages workflow into `main`, or open **Actions → Deploy GitHub Pages** and run it manually.
-5. When the workflow completes, the site will be available at [sonalishyma.github.io/SMB-Money-Stack-](https://sonalishyma.github.io/SMB-Money-Stack-/).
-
-Every subsequent push to `main` will rebuild and redeploy the site automatically.
