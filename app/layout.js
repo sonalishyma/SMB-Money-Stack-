@@ -1,13 +1,16 @@
 import "./globals.css";
 
+const siteBasePath = (process.env.PAGES_BASE_PATH ?? "").replace(/\/+$/, "");
+const walletIconUrl = `${siteBasePath}/icon.png?v=2`;
+
 export const metadata = {
   title: "The SMB Money Stack — Intuit vs. BILL vs. Toast",
   description:
     "A filing-led SaaS metrics teardown of three ways to monetize the small-business wallet.",
   icons: {
-    icon: [{ url: "/icon.png", type: "image/png" }],
-    shortcut: "/icon.png",
-    apple: "/icon.png",
+    icon: [{ url: walletIconUrl, type: "image/png" }],
+    shortcut: walletIconUrl,
+    apple: walletIconUrl,
   },
   metadataBase: new URL("https://smb-money-stack-teardown.sites.openai.com"),
   openGraph: {
