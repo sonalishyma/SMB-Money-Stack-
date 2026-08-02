@@ -4,6 +4,8 @@ A filing-led strategic finance case study comparing how **Intuit, BILL, and Toas
 
 [View the GitHub Pages site](https://sonalishyma.github.io/SMB-Money-Stack-/)
 
+![The SMB Money Stack website preview](SMB%20monery%20Stack%20ss.png)
+
 ## The question
 
 The customer is similar; the monetization layer changes:
@@ -72,5 +74,3 @@ Analysis as of July 27, 2026.
 - Static export for GitHub Pages
 - GitHub Actions for automated deployment
 ```
-
-
