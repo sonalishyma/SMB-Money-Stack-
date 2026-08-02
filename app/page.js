@@ -21,8 +21,6 @@ import {
 
 const navItems = [
   ["question", "Question"],
-  ["data", "Data"],
-  ["method", "Method"],
   ["findings", "Findings"],
   ["call", "The Call"],
 ];
@@ -149,10 +147,14 @@ export default function Home() {
       <div className="scroll-progress" aria-hidden="true" />
       <header className="site-header">
         <a href="#top" className="wordmark" aria-label="Back to top">
-          <span>SS</span>
+          <span aria-hidden="true">
+            <i />
+            <i />
+            <i />
+          </span>
           <div>
-            <strong>STRATEGIC FINANCE</strong>
-            <small>CASE STUDY · 06C</small>
+            <strong>MONEY STACK</strong>
+            <small>SMB ECONOMICS</small>
           </div>
         </a>
 
@@ -181,7 +183,7 @@ export default function Home() {
         </nav>
 
         <a className="header-cta" href="#call">
-          Read the memo <ArrowIcon />
+          See the answer <ArrowIcon />
         </a>
       </header>
 
@@ -198,20 +200,19 @@ export default function Home() {
             <div className="hero__copy reveal">
               <p className="eyebrow brass">THE SMB MONEY STACK</p>
               <h1>
-                Three ways to
+                Three companies.
                 <br />
-                monetize the same
+                One wallet.
                 <br />
-                <em>small-business wallet.</em>
+                <em>Who wins?</em>
               </h1>
               <p className="hero__lede">
-                Intuit sells the software. BILL sells the workflow plus a cut
-                of each payment. Toast sells the operating system where
-                payments are the business model. Which growth engine is built
-                to last?
+                Intuit, BILL, and Toast monetize the same small-business
+                customer in three very different ways. This case study finds
+                which model is built to last.
               </p>
               <div className="hero__call">
-                <span>THE FIVE-YEAR CALL</span>
+                <span>THE SHORT ANSWER</span>
                 <p>
                   Hold <strong>Intuit</strong>. Watch <strong>Toast</strong>.
                   Underwrite <strong>BILL</strong> as a special situation.
@@ -219,7 +220,7 @@ export default function Home() {
               </div>
               <div className="hero__actions">
                 <a href="#findings" className="button button--dark">
-                  Open the dashboard <ArrowIcon />
+                  See the findings <ArrowIcon />
                 </a>
                 <button
                   type="button"

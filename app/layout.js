@@ -1,14 +1,14 @@
 import "./globals.css";
 
 const siteBasePath = (process.env.PAGES_BASE_PATH ?? "").replace(/\/+$/, "");
-const walletIconUrl = `${siteBasePath}/icon.png?v=2`;
+const walletIconUrl = `${siteBasePath}/icon.svg?v=3`;
 
 export const metadata = {
   title: "The SMB Money Stack — Intuit vs. BILL vs. Toast",
   description:
     "A filing-led SaaS metrics teardown of three ways to monetize the small-business wallet.",
   icons: {
-    icon: [{ url: walletIconUrl, type: "image/png" }],
+    icon: [{ url: walletIconUrl, type: "image/svg+xml" }],
     shortcut: walletIconUrl,
     apple: walletIconUrl,
   },
