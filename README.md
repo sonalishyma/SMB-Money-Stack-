@@ -73,4 +73,23 @@ Analysis as of July 27, 2026.
 - Custom CSS and hand-built SVG visualizations
 - Static export for GitHub Pages
 - GitHub Actions for automated deployment
+
+## Run locally
+
+Node.js 20.9 or later is required.
+
+```bash
+git clone https://github.com/sonalishyma/SMB-Money-Stack-.git
+cd SMB-Money-Stack-
+npm ci
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+To build and preview the production output:
+
+```bash
+npm run build
+npm start
 ```
