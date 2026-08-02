@@ -4,7 +4,7 @@ A filing-led strategic finance case study comparing how **Intuit, BILL, and Toas
 
 [View the GitHub Pages site](https://sonalishyma.github.io/SMB-Money-Stack-/)
 
-![The SMB Money Stack website preview](SMB%20monery%20Stack%20ss.png)
+![The redesigned SMB Money Stack website](./SS1.png)
 
 ## The question
 
