@@ -601,14 +601,14 @@ export function EfficiencyAndSbcChart() {
     <div className="paired-metrics">
       <HorizontalMetric
         title="Sales efficiency"
-        description="Net new revenue per $1 of prior-year S&M."
+        description="Net new revenue per $1 of prior year S&M."
         values={(company) => company.salesEfficiency[3]}
         max={2.8}
         formatter={(value) => `${value.toFixed(2)}×`}
       />
       <HorizontalMetric
         title="Equity dilution"
-        description="Stock-based compensation as a share of revenue."
+        description="Stock based compensation as a share of revenue."
         values={(company) => company.sbcPercent[3]}
         max={18}
         formatter={(value) => `${value.toFixed(1)}%`}

@@ -60,7 +60,7 @@ function exportComparison() {
     ["Fiscal year", "FY2025", "FY2025", "FY2025"],
     ["Revenue ($mm)", ...companyList.map((company) => company.revenue[3])],
     ["Revenue growth (%)", ...companyList.map((company) => company.growth[3])],
-    ["FY22-FY25 CAGR (%)", ...companyList.map((company) => company.cagr)],
+    ["FY22 to FY25 CAGR (%)", ...companyList.map((company) => company.cagr)],
     [
       "Blended gross margin (%)",
       ...companyList.map((company) => company.grossMargin[3]),
@@ -193,7 +193,7 @@ export default function Home() {
             LEDGER / 06C / SMB
           </div>
           <div className="hero__meta reveal">
-            <span>PUBLIC FILINGS · FY2022–FY2025</span>
+            <span>PUBLIC FILINGS · FY2022 TO FY2025</span>
             <span>ANALYSIS AS OF JULY 27, 2026</span>
           </div>
           <div className="hero__grid">
@@ -207,7 +207,7 @@ export default function Home() {
                 <em>Who wins?</em>
               </h1>
               <p className="hero__lede">
-                Intuit, BILL, and Toast monetize the same small-business
+                Intuit, BILL, and Toast monetize the same small business
                 customer in three very different ways. This case study finds
                 which model is built to last.
               </p>
@@ -291,20 +291,10 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="origin-note reveal">
-            <div className="origin-note__mark">“</div>
-            <p>
-              I ran QuickBooks daily in an accounting internship—Intuit was my
-              toolbench. BILL is what the AP/AR workflows I did by hand look
-              like as a product. Toast is the same idea taken to its extreme,
-              where software is the wedge and payments are the revenue.
-            </p>
-            <span>THE ANALYST’S ANGLE</span>
-          </div>
         </section>
 
         <section className="section section--data" id="data">
-          <SectionLabel number="02" aside="SEC EDGAR · 10-K + LATEST 10-Q">
+          <SectionLabel number="02" aside="SEC EDGAR · 10 K + LATEST 10 Q">
             THE DATA
           </SectionLabel>
           <div className="split-heading reveal">
@@ -369,7 +359,7 @@ export default function Home() {
             <p>
               The latest reported quarters preserve the same ordering: Toast
               grows fastest; Intuit compounds more slowly; BILL’s core
-              transaction engine outgrows its rate-sensitive float.
+              transaction engine outgrows its rate sensitive float.
             </p>
           </div>
           <LatestQuarterPulse />
@@ -407,7 +397,7 @@ export default function Home() {
                 ],
                 [
                   "Reconcile",
-                  "Computed revenue must equal the reported income-statement total in every company-year.",
+                  "Computed revenue must equal the reported income statement total in every company year.",
                 ],
                 [
                   "Compute",
@@ -415,7 +405,7 @@ export default function Home() {
                 ],
                 [
                   "Interpret",
-                  "Separate model economics from disclosure artifacts before making the five-year call.",
+                  "Separate model economics from disclosure artifacts before making the five year call.",
                 ],
               ].map(([title, copy], index) => (
                 <article className="method-step reveal" key={title}>
@@ -442,7 +432,7 @@ export default function Home() {
               <h4>Sales efficiency</h4>
               <p>Net new revenue</p>
               <b>÷</b>
-              <p>Prior-year S&amp;M</p>
+              <p>Prior year S&amp;M</p>
             </article>
             <article>
               <span>03</span>
@@ -474,7 +464,7 @@ export default function Home() {
               <span>DISCLOSURE NOTE · BILL</span>
               <h3>Stream costs are not disclosed.</h3>
               <p>
-                BILL reports one combined cost-of-revenue line. The analysis
+                BILL reports one combined cost of revenue line. The analysis
                 uses blended gross margin only; any 100% stream margin is a
                 spreadsheet artifact, not an economic claim.
               </p>
@@ -498,7 +488,7 @@ export default function Home() {
             <div>
               <p>
                 The charts move from output to mechanism: first the Rule of 40,
-                then the four-year growth path, the revenue engine, the margin
+                then the four year growth path, the revenue engine, the margin
                 anatomy, and finally the cost of acquiring that growth.
               </p>
               <button
@@ -525,7 +515,7 @@ export default function Home() {
                 <span>READ</span>
                 <p>
                   Intuit is the only FY2025 name above the line. Toast owns the
-                  growth axis; Intuit owns the cash-conversion axis.
+                  growth axis; Intuit owns the cash conversion axis.
                 </p>
                 <b>47.9%</b>
               </div>
@@ -536,7 +526,7 @@ export default function Home() {
               <h3>
                 Intuit’s lead is not speed.
                 <br />
-                It is self-funding growth.
+                It is self funding growth.
               </h3>
               <p>
                 A 32.3% FCF margin gives Intuit room to reinvest, repurchase,
@@ -583,7 +573,7 @@ export default function Home() {
                 <span>READ</span>
                 <p>
                   Toast is 81.9% payments revenue. BILL is 70.3% transaction and
-                  11.1% rate-sensitive float. Intuit’s payments mix is not
+                  11.1% rate sensitive float. Intuit’s payments mix is not
                   separately disclosed.
                 </p>
               </div>
@@ -609,7 +599,7 @@ export default function Home() {
                   <i />
                 </div>
                 <div>
-                  <span>NET-REVENUE VIEW¹</span>
+                  <span>NET REVENUE VIEW¹</span>
                   <strong>70.4%</strong>
                 </div>
                 <div>
@@ -623,16 +613,16 @@ export default function Home() {
               </div>
               <p className="margin-footnote">
                 ¹ Illustrative: gross profit ÷ (reported revenue − fintech cost
-                of revenue). Fintech cost includes processor pass-throughs plus
+                of revenue). Fintech cost includes processor pass through costs plus
                 personnel and infrastructure, so this is not a GAAP
                 restatement.
               </p>
               <div className="exhibit__footer">
                 <span>READ</span>
                 <p>
-                  Toast is not simply a 26%-margin company. Netting fintech
+                  Toast is not simply a 26% margin company. Netting fintech
                   processing cost from the revenue denominator produces an
-                  illustrative 70.4% net-revenue margin; the software layer is
+                  illustrative 70.4% net revenue margin; the software layer is
                   71.8%.
                 </p>
                 <b>+$225M</b>
@@ -649,7 +639,7 @@ export default function Home() {
               </h3>
               <p>
                 The fastest growth, highest sales efficiency, lowest SBC
-                burden, and 109% NRR make Toast the credible challenger—if cash
+                burden, and 109% NRR make Toast the credible challenger if cash
                 conversion keeps climbing.
               </p>
               <div>
@@ -669,17 +659,17 @@ export default function Home() {
               <EfficiencyAndSbcChart />
               <p className="metric-footnote">
                 Sales efficiency is directionally useful, not perfectly
-                apples-to-apples: Toast and BILL report gross transaction
+                directly comparable: Toast and BILL report gross transaction
                 revenue, and BILL records Divvy rewards inside sales &amp;
                 marketing.
               </p>
               <div className="exhibit__footer">
                 <span>READ</span>
                 <p>
-                  Toast adds revenue with far less go-to-market spend and
+                  Toast adds revenue with far less sales and marketing spend and
                   dilution. BILL’s 0.36× efficiency, 16.6% SBC, and 94% net
-                  retention create a private-equity playbook—and a
-                  public-market warning.
+                  retention create a private equity playbook and a
+                  public market warning.
                 </p>
               </div>
             </article>
@@ -692,9 +682,9 @@ export default function Home() {
                 <h3>Comparable metrics, one view.</h3>
               </div>
               <p>
-                “n/d” means the company did not disclose a decision-useful
-                figure. BILL’s 94% FY25 net dollar-based retention is corrected
-                from the blank workbook input using its 10-K.
+                “n/d” means the company did not disclose a useful
+                figure. BILL’s 94% FY25 net dollar based retention is corrected
+                from the blank workbook input using its 10 K.
               </p>
             </div>
             <ComparisonTable />
@@ -707,7 +697,7 @@ export default function Home() {
           </SectionLabel>
           <div className="call-intro reveal">
             <div>
-              <p className="eyebrow brass">THE FIVE-YEAR HOLD</p>
+              <p className="eyebrow brass">THE FIVE YEAR HOLD</p>
               <h2>
                 Buy the proof.
                 <br />
@@ -717,7 +707,7 @@ export default function Home() {
             <p>
               Intuit wins on demonstrated durability. Toast has the best path
               to change the ranking. BILL’s filing data explain the sponsor
-              interest—but they do not make the operating questions disappear.
+              interest, but they do not make the operating questions disappear.
             </p>
           </div>
 
@@ -734,7 +724,7 @@ export default function Home() {
             </div>
             <div className="memo-sheet__subject">
               <span>SUBJECT</span>
-              <h3>The SMB Money Stack · five-year durability</h3>
+              <h3>The SMB Money Stack · five year durability</h3>
               <div className="memo-sheet__status">
                 <strong>INTU</strong>
                 <span>CONVICTION · HIGH</span>
@@ -763,16 +753,16 @@ export default function Home() {
                 <p className="memo-opening">
                   If I had to hold one for five years, I would hold Intuit. The
                   call rests on two FY2025 numbers: a <strong>47.9%</strong>{" "}
-                  Rule of 40 score and a <strong>32.3%</strong> free-cash-flow
+                  Rule of 40 score and a <strong>32.3%</strong> free cash flow
                   margin.
                 </p>
                 <p>
                   <a href="#exhibit-1">Exhibit 1</a> makes the durability
                   ranking clear. Intuit is the only company above the 40%
                   threshold: 15.6% growth plus a 32.3% FCF margin. BILL reaches
-                  34.7%; Toast 33.9%. The four-observation CAGRs reverse the
-                  headline—31.6% for BILL and 31.1% for Toast versus 14.0% for
-                  Intuit—but the latest year shows what those averages conceal.
+                  34.7%; Toast 33.9%. The four observation CAGRs reverse the
+                  headline. BILL reaches 31.6% and Toast reaches 31.1% versus 14.0% for
+                  Intuit, but the latest year shows what those averages conceal.
                   Intuit’s growth is not the fastest; it is the least dependent
                   on future margin improvement.
                 </p>
@@ -781,16 +771,16 @@ export default function Home() {
                   interpretation. Its 25.9% blended margin contains a 71.8%
                   software layer and a 22.8% payments layer. Hardware and
                   professional services generated $180 million of revenue
-                  against $405 million of cost, including acquired-intangible
-                  amortization. That strengthens the long-term margin case, but
+                  against $405 million of cost, including acquired intangible
+                  amortization. That strengthens the long term margin case, but
                   81.9% of current revenue still comes from payments.
                 </p>
                 <p>
                   <a href="#exhibit-5">Exhibit 5</a> belongs to Toast: $2.54 of
-                  incremental revenue per dollar of prior-year S&amp;M, 3.9%
+                  incremental revenue per dollar of prior year S&amp;M, 3.9%
                   SBC / revenue, and 109% NRR. It has the best upside to the
                   ranking, but its 9.9% FCF margin keeps that upside as an
-                  execution requirement—not yet a proven result.
+                  execution requirement, not yet a proven result.
                 </p>
                 <p>
                   BILL’s sponsor appeal is visible in the filings: 81.4%
@@ -798,7 +788,7 @@ export default function Home() {
                   FCF on $1.46 billion of revenue. Its 0.36× sales efficiency
                   and 16.6% SBC burden create obvious levers. The harder facts
                   are structural: growth has slowed to 13.4%, 70.3% of revenue
-                  is transaction-based, 11.1% is float, and net dollar-based
+                  is transaction based, 11.1% is float, and net dollar based
                   retention is 94%. The data explain why private equity is
                   interested; they do not answer what price it should pay.
                 </p>
@@ -819,7 +809,7 @@ export default function Home() {
           <div className="print-row reveal">
             <p>
               The memo is formatted for print. Use your browser’s “Save as
-              PDF” option for a one-page handoff.
+              PDF” option for a one page handoff.
             </p>
             <button
               type="button"
@@ -839,8 +829,8 @@ export default function Home() {
               <span>INTU · OPACITY</span>
               <h4>The mix can move before the model sees it.</h4>
               <p>
-                Embedded payments are not isolated in the filing. A lower-margin
-                mix shift, tax-season concentration, or weaker Mailchimp /
+                Embedded payments are not isolated in the filing. A lower margin
+                mix shift, tax season concentration, or weaker Mailchimp /
                 Credit Karma execution could pressure the quality signal.
               </p>
               <strong>MONITOR · ONLINE SERVICES MIX</strong>
@@ -860,7 +850,7 @@ export default function Home() {
               <h4>Distribution can remain expensive at scale.</h4>
               <p>
                 Restaurant cyclicality, interchange economics, and a
-                loss-leading hardware wedge could keep blended margin and cash
+                loss leading hardware wedge could keep blended margin and cash
                 conversion below the level its growth rate deserves.
               </p>
               <strong>MONITOR · FCF MARGIN</strong>
@@ -877,7 +867,7 @@ export default function Home() {
             <p>
               Annual metrics come from the supplied collection workbook and
               are traceable to SEC filings. Quarterly figures are used as a
-              current-momentum check, not mixed into annual calculations.
+              current momentum check, not mixed into annual calculations.
             </p>
           </div>
           <div className="source-list">

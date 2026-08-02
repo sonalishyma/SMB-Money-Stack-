@@ -3302,7 +3302,7 @@ body {
 .question-heading h2 em,
 .call-intro h2 em { font-family: var(--font-serif); }
 
-.model-grid { gap: 14px; margin-top: 56px; }
+.model-grid { gap: 14px; margin-top: 56px; border-top: 0; border-bottom: 0; }
 .model-card {
   min-height: 360px;
   padding: 28px;
@@ -3316,6 +3316,7 @@ body {
 .model-card h3 { font-family: var(--font-sans); font-size: 30px; font-weight: 600; letter-spacing: -.035em; }
 .model-card p { font-size: 15px; }
 .model-card__metric strong { font-family: var(--font-sans); font-size: 32px; font-weight: 600; }
+.model-card__rule { display: none; }
 .origin-note { border: 0; border-radius: 28px; background: var(--ink); color: #fff; }
 
 .split-heading,
@@ -3333,13 +3334,14 @@ body {
 .data-register__grid strong { color: #fff; font-family: var(--font-sans); font-weight: 600; }
 .data-register__note { background: rgba(117,185,255,.13); }
 .pulse-grid { gap: 14px; }
+.subsection-heading { border-top: 0; }
 .pulse-card { border: 0; border-radius: 24px; background: rgba(255,255,255,.9); box-shadow: none; }
 
 .method-layout { gap: 72px; }
 .method-stamp { border-radius: 18px; transform: none; }
 .method-step { border: 0; border-bottom: 1px solid var(--rule); }
 .method-step > span { color: var(--ink-blue); }
-.formula-grid { gap: 10px; }
+.formula-grid { gap: 10px; border-top: 0; border-bottom: 0; }
 .formula-grid article { border: 0; border-radius: 22px; background: var(--paper-warm); }
 .judgment-grid { gap: 14px; }
 .judgment-note { border: 0; border-radius: 24px; background: #edf3ff; }
