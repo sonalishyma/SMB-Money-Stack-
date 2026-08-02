@@ -4,6 +4,11 @@ export const metadata = {
   title: "The SMB Money Stack — Intuit vs. BILL vs. Toast",
   description:
     "A filing-led SaaS metrics teardown of three ways to monetize the small-business wallet.",
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
   metadataBase: new URL("https://smb-money-stack-teardown.sites.openai.com"),
   openGraph: {
     title: "The SMB Money Stack",
